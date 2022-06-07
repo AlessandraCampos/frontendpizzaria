@@ -1,0 +1,31 @@
+<div class="container main-container" margin-top="100px">
+   
+   <form [formGroup]="form" (submit)="submit()">
+      <fieldset>
+        <legend>Cadastro de Usuário</legend>
+        <div class="form-group" >
+          <label for="exampleInputPassword1" class="form-label mt-4">Nome Completo</label>
+          <input formControlName="nome" type="text" class="form-control" id="exampleInputPassword1" placeholder="Nome Completo" required>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1" class="form-label mt-4">CPF</label>
+          <input formControlName="cpf"  type="number"  id="cpf" name="cpf" class="form-control" placeholder="CPF" required/>
+        </div>
+      
+        <div class="form-group">
+          <label for="exampleInputEmail1" class="form-label mt-4">Email </label>
+          <input formControlName="email" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="email@example.com" required>
+          <small id="emailHelp" class="form-text text-muted">Nós não compartilhamos email de usuários.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1" class="form-label mt-4">Senha</label>
+          <input formControlName="senha" type="password" class="form-control" id="senha" placeholder="Digite a senha" required> 
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1" class="form-label mt-4" id="perfilId" ></label>
+        </div>
+        <button type="submit" class="btn btn-black" >Salvar</button>
+        <button type="submit" class="btn btn-secondary" >Cancelar</button>
+      </fieldset>
+    </form>
+</div>

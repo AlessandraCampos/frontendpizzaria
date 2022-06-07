@@ -1,0 +1,60 @@
+<ng-container>
+
+    <div class="container">
+        <div class="card-table">
+            <div class="cart-product">
+                <table class="table table-responsive">
+                    <thead>
+                        <tr>
+                            <th>Pedido</th>
+                            <th>Produto</th>
+                            <th>Descrição</th>
+                            <th>Preço</th>
+                            <th>Quantidade</th>
+                            <th>Total</th>
+                            <th>Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td style="width: 25%;"></td>
+                            <th style="width: 12%;"></th>
+                            <td style="width: 12%;"></td>
+                            <td style="width: 12%;"></td>
+                            <td>
+                                <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"></td>
+                            <td><button class="btn btn-danger">Esvaziar Carrinho</button></td>
+                            <td><button [routerLink]="['/produtos']" class="btn btn-primary">Continuar Comprando</button></td>
+                            <td><button  [routerLink]="['/checkout']"class="btn btn-success">Checkout</button></td>
+                            <td><strong></strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</ng-container>
+
+
+
+<ng-container>
+<div class="container">
+    <div class="card">
+        <h3 class="card-title">Meu Carrinho</h3>
+    </div>
+    <div class="center">
+        <img src="/assets/carrinhovazio.png" alt="">
+
+        <h4 class="card-title">Seu carrinho está vazio</h4>
+            <h6 class="card-title">Adicione itens ao Carrinho</h6>
+                <button class="btn btn-primary" [routerLink]="['/produtos']">Comprar agora</button>
+    </div>
+</div>
+</ng-container>

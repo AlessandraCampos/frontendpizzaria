@@ -1,0 +1,22 @@
+<!-- Navigation Start -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark"   display="block"  width="100%">
+    <div class="container">
+      <a class="navbar-brand" [routerLink]="['/home']">Pizzaria ElShaddai</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <button routerLink="cart" class="btn btn-danger" [routerLink]="['/carrinho']">
+            <img src="assets/shop.svg">
+            <div style="font-size: 10px;" >{{totalItem}}</div>
+        </button>
+          <li class="nav-item"><a class="nav-link" [routerLink]="['/produtos']">Produtos</a></li>
+          <li class="nav-item"><a class="nav-link" [routerLink]="['/cadastroprodutos']">Cadastrar Produtos</a></li>
+          <li class="nav-item"><a class="nav-link" [routerLink]="['/login']">Login</a></li>
+          <li class="nav-item"><a class="nav-link" [routerLink]="['/registre-se']">Registre-se</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navigation End -->

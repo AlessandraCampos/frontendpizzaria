@@ -1,0 +1,35 @@
+<div class="container main-container" margin-top="100px">
+   
+    <form>
+       <fieldset>
+         <legend>Cadastro de Produto</legend>
+         <div class="form-group" >
+           <label for="nomeproduto" class="form-label mt-4">Produto</label>
+           <input formControlName="produto" type="text" class="form-control" id="nomeproduto" placeholder="Produto" required>
+         </div>
+         <div class="form-group">
+           <label for="descricao" class="form-label mt-4">Descrição do Produto</label>
+           <input formControlName="descricao"  type="text"  id="descricao" name="descricao" class="form-control" placeholder="Detalhes do Produto" />
+         </div>
+       
+         <div class="form-group">
+           <label for="unidmedida" class="form-label mt-4">Unidade de Medida </label>
+           <input formControlName="unidmedid" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Unidade de Medida" required/>
+         </div>
+         <div class="form-group">
+           <label for="foto" class="form-label mt-4">Foto</label>
+           <input formControlName="foto" type="text" class="form-control" id="foto" placeholder="Url da imagem" required> 
+         </div>
+         <div class="form-group">
+            <label for="preco" class="form-label mt-4">Preço</label>
+            <input formControlName="preco" type="number" class="form-control" id="preco" placeholder="Preço Unitário" required> 
+          </div>
+          <div class="form-group">
+            <label for="foto" class="form-label mt-4">Quantidade de estoque</label>
+            <input formControlName="foto" type="text" class="form-control" id="foto" placeholder="Url da imagem"> 
+          </div>
+          <button type="submit" class="btn btn-black">Salvar</button>
+         <button type="button" class="btn btn-secondary" padding-left="10px">Cancelar</button>
+       </fieldset>
+     </form>
+ </div>

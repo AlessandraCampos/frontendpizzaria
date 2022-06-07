@@ -1,0 +1,32 @@
+
+<div class="card-top container-fluid">
+  <div class="container">
+    <div class="row">
+        <ng-container *ngFor ="let produto of produtos">
+            <div class="card col-md-3">
+                <img src="{{produto.foto}}"  alt="">
+                <h5 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{produto.nome}}</h5>
+                <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{produto.descricao}}</p>
+                <p><strong>Price:</strong> {{produto.preco}}</p>
+                <button class="btn btn-primary">Add to cart</button>
+            </div>
+        </ng-container>
+
+    </div>
+  </div>
+</div >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
